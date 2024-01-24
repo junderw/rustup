@@ -7,7 +7,7 @@ $ npx rustup
 ```
 
 ```
-yarn add --dev rustup
+yarn add --dev @junderw/rustup
 
 cat <<EOF > rust-toolchain
 [toolchain]
