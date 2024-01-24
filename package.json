@@ -1,6 +1,6 @@
 {
   "name": "@junderw/rustup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "rustup-init": "rustup-init",
     "rustfmt": "rustup",

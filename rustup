@@ -11,7 +11,7 @@ export CARGO_HOME="${PKG_DIR}/CARGO_HOME"
 export RUSTUP_HOME="${PKG_DIR}/RUSTUP_HOME"
 
 if ! [[ -d $CARGO_HOME ]]; then
-  $PKG_DIR/rustup-init --default-toolchain none -y
+  $PKG_DIR/rustup-init --no-modify-path --default-toolchain none -y
 fi
 
 exec $CARGO_HOME/bin/$COMMAND "$@"
