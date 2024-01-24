@@ -1,0 +1,22 @@
+#!/bin/sh
+
+PKG_DIR="$(dirname "$(realpath "$0")")"
+
+COMMAND="$(basename "$0")"
+
+export RUSTUP_INIT_SKIP_PATH_CHECK=yes
+
+export CARGO_HOME="${PKG_DIR}/CARGO_HOME"
+
+export RUSTUP_HOME="${PKG_DIR}/RUSTUP_HOME"
+
+if ! [[ -d $CARGO_HOME ]]; then
+  $PKG_DIR/rustup-init --default-toolchain none -y
+fi
+
+exec $CARGO_HOME/bin/$COMMAND "$@"
+
+echo $PKG_DIR
+echo $CARGO_HOME
+echo $RUSTUP_HOME
+echo $COMMAND

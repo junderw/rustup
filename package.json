@@ -1,0 +1,40 @@
+{
+  "name": "@junderw/rustup",
+  "version": "1.0.0",
+  "bin": {
+    "rustup-init": "rustup-init",
+    "rustfmt": "rustup",
+    "rustup": "rustup",
+    "cargo": "rustup",
+    "cargo-clippy": "rustup",
+    "cargo-fmt": "rustup",
+    "cargo-miri": "rustup",
+    "clippy-driver": "rustup",
+    "rls": "rustup",
+    "rust-gdb": "rustup",
+    "rust-gdbgui": "rustup",
+    "rust-lldb": "rustup",
+    "rustc": "rustup",
+    "rustdoc": "rustup"
+  },
+  "description": "A simple rustup installer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junderw/rustup.git"
+  },
+  "keywords": [
+    "cargo",
+    "rust",
+    "rustup"
+  ],
+  "contributors": ["btwiuse", "junderw"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/junderw/rustup/issues"
+  },
+  "homepage": "https://github.com/junderw/rustup"
+}
